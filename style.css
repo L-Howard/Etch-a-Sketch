@@ -1,0 +1,22 @@
+
+.container {
+    display: flex;
+    border: solid;
+    padding: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    background-color: blanchedalmond;
+}
