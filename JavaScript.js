@@ -7,6 +7,7 @@ function createRows (rows) {
     while (i < rows) {
         const divrow = container.appendChild(document.createElement("div"));
         i2 = 0;
+        divrow.classList.add("divrow");
         while(i2 < rows){
 
         
@@ -20,11 +21,6 @@ function createRows (rows) {
 
         i++;
     }
-
-}
-
-createRows(16);
-
 const boxes = document.querySelectorAll(".box");
 
 boxes.forEach(box => {
@@ -32,3 +28,23 @@ boxes.forEach(box => {
     box.style.backgroundColor = "black";
 });
 });
+}
+
+createRows(16);
+
+
+
+const button = document.querySelector("button")
+
+button.addEventListener("click", function (){
+    size = prompt("How many squares per side? Max: 100");
+    allRows = document.querySelectorAll(".divrow")
+    allRows.forEach(row => {
+        row.remove()
+    })
+
+    
+    
+    createRows(size);
+
+})
