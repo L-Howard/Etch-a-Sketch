@@ -7,6 +7,8 @@
     margin-right: 150px;
     justify-content: center;
     align-items: center;
+    width: 500px;
+    height: 500px;
 
 }
 
@@ -21,4 +23,9 @@
 button {
     padding: 15px;
     background-color: blanchedalmond;
+    margin-right: 1000px;
+}
+
+.box {
+    box-sizing: border-box;
 }
